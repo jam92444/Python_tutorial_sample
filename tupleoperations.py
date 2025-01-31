@@ -100,5 +100,7 @@ y = thistuple.index(5)
 
 print("Index: ",y)
 
-
+z = [1,2,3,4]
+del z
+print(z)
 
