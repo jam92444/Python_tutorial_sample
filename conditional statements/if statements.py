@@ -38,11 +38,11 @@ if (condition):
 age = int(input("Enter age : "))
 license1 = input("DO you have you driving license:(Y/N) ");
 
-if age >= 18:
+if age >= 18:#f
     if license1 == "Y" or license1 == "y":
         print("You are eligible for driving");
     else:
         print("You are not eligible or driving")
-else:
+else:#t
     print("You are not eligible or driving")
     
