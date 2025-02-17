@@ -168,4 +168,12 @@ you word bushra is not a palindrome
 17.Write a Python program that iterates the integers from 1 to 25.
 '''
 
+a = 10 
+b = 20
 
+def add(a,b):
+    print(a+b)
+def add2(a,b):
+    print(a+b)
+
+add(11,2)
