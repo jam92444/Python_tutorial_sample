@@ -1,11 +1,11 @@
 ''' 
-A function is a block of code which only runs when it is called.
+# A function is a block of code which only runs when it is called.
 
-You can pass data, known as parameters, into a function.
+# You can pass data, known as parameters, into a function.
 
-A function can return data as a result.
+# A function can return data as a result.
 
-'''
+
 #Creating a Function
 # to create we use 
 # def funtion_name():
@@ -24,16 +24,17 @@ A function can return data as a result.
     
 # allmath(12,10)
     
-''' 
 
-Arguments
-Information can be passed into functions as arguments.
 
-Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+# Arguments
+# Information can be passed into functions as arguments.
 
-def functionname(Arguments1,argument2):
-    //statement or block of code
-    
+# Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+# def functionname(Arguments1,argument2):
+#     //statement or block of code
+
+
 
 def familyname(middlename):
     print(f"Mohamed {middlename} Jamal");
@@ -45,10 +46,10 @@ familyname("Imran")
 familyname("Irfan")
 
 
-Arbitrary Arguments, *args
+# Arbitrary Arguments, *args
 
 
-If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+# If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
 
 def my_function(*kids):
   print("The youngest child is " + kids[2])
@@ -68,20 +69,20 @@ addition(1,2,3,4,5)
 
 # Keyword Arguments
 
-You can also send arguments with the key = value syntax.
+# You can also send arguments with the key = value syntax.
    
-'''
 
-# def fullName(fname,lname):
-#     print(f"{fname} {lname}")
+
+def fullName(fname,lname):
+    print(f"{fname} {lname}")
     
-# fullName(lname="amri",fname="bushra")
+fullName(lname="amri",fname="bushra")
 
 
-'''
 
-Arbitrary Keyword Arguments, **kwargs
-If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+
+# Arbitrary Keyword Arguments, **kwargs
+# If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
 
 sas = {
     "fname":"Tobias",
@@ -156,8 +157,8 @@ username = input("Enter username: ");
 password = input("Enter password: ");
 login(username=username,password=password);
 
-'''
 
+'''
 
 #register form 
 def register(username,email,password,phone):
@@ -196,15 +197,15 @@ def register(username,email,password,phone):
     found = False;
     
     #check the phone number is valid
-    if phone:
-        if len(phone)<10 or len(phone)>10:
-            print("Enter a valid Phone Number");
-            return;
+   
     
     #check if email already exist
     for user in userData:
         if user['email'] == email:
             found = True
+            break;
+        if user['phone'] == phone:
+            found = True;
             break;
     if found:
         print(f'{email} already exist.');
