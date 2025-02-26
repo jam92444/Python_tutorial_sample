@@ -42,7 +42,7 @@ Examples of =Lambda Functions
     squared_numbers = map(square, numbers);
    
     
-# Example:'''
+# Example:
 # numbers = [1, 2, 3, 4, 5]
 # doubled = list(map(lambda x: x * 2, numbers))
 # print(doubled)  
@@ -55,7 +55,7 @@ final_table = list(map(addItem,number));
 tables = list(map(lambda x,y: x * y,final_table, number))
 print(tables)
 
-
+'''
 
 # Here, the lambda function `lambda x: x * 2` doubles each number in the list `numbers`.
 
@@ -64,12 +64,12 @@ print(tables)
     The `filter()` function filters elements from an iterable based on a condition defined by a function. It returns elements for which the function returns `True`.
 
 # Example:
-
+'''
 
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)  # Output: [2, 4, 6]
-'''
+
 
 # In this example, `lambda x: x % 2 == 0` filters out only the even numbers from the list.
 
